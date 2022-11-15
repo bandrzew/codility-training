@@ -50,7 +50,7 @@ public class CyclicRotation {
 		System.out.println(Arrays.toString(solution(new int[] { 1, 2, 3, 4 }, 4)));
 	}
 
-	public static int[] solution(int[] A, int K) {
+	private static int[] solution(int[] A, int K) {
 		if (A.length == 0 || K % A.length == 0)
 			return A;
 

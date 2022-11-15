@@ -41,7 +41,7 @@ public class OddOccurrencesInArray {
 		System.out.println(solution(new int[] { 9, 3, 9, 3, 9, 7, 9 }));
 	}
 
-	public static int solution(int[] A) {
+	private static int solution(int[] A) {
 		final Set<Integer> elements = new HashSet<>();
 		for (int element : A) {
 			if (elements.contains(element)) {

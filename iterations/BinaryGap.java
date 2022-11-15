@@ -29,7 +29,7 @@ public class BinaryGap {
 		System.out.println(solution(32) == 0);
 	}
 
-	public static int solution(int N) {
+	private static int solution(int N) {
 		final String binary = Integer.toBinaryString(N);
 		int previousIndex = binary.indexOf(ONE), currentIndex = 0, maxGap = 0;
 
