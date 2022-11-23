@@ -26,15 +26,7 @@ public class CountDiv {
 	}
 
 	private static int solution(int A, int B, int K) {
-		if (B / K == 0) {
-			return (B % K) == 0 ? 1 : 0;
-		} else if (A / K == 0) {
-			return (A % K) == 0 ? (B / K) + 1 : B / K;
-		} else if (A % K == 0 || B % K == 0) {
-			return ((B - A) / K) + 1;
-		} else {
-			return (B - A) / K;
-		}
+		return (B / K) - (A / K) + (A % K == 0 ? 1 : 0);
 	}
 
 }
